@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kiruma-souichi-chess
+    runtime: node
+    plan: free
+    healthCheckPath: /api/health
+    buildCommand: >-
+      cd frontend && npm ci && npm run build &&
+      cd ../backend && npm ci && mkdir -p engine &&
+      curl -sL -o /tmp/sf.tar https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-ubuntu-x86-64.tar &&
+      tar -xf /tmp/sf.tar -C /tmp &&
+      cp /tmp/stockfish/stockfish-ubuntu-x86-64 engine/stockfish &&
+      chmod +x engine/stockfish
+    startCommand: cd backend && node server.js

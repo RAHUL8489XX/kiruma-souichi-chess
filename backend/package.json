@@ -1,0 +1,15 @@
+{
+  "name": "kiruma-souichi-backend",
+  "version": "1.0.0",
+  "description": "Backend for Kiruma Souichi Chess — spawns a real Stockfish engine process and serves move/certificate APIs.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pdfkit": "^0.15.0"
+  }
+}
