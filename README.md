@@ -105,6 +105,5 @@ itself doesn't need to change, only `STOCKFISH_PATH`.
 ## Notes
 
 - The "Undo" button was intentionally removed per request.
-- If you want the exact flat cartoon-icon piece style from your reference
-  screenshot (rather than the current bold Unicode glyphs), that's a follow-up
-  — just ask and I'll swap in a custom SVG piece set.
+- If you guys want the exact flat cartoon-icon piece style (rather than the current bold Unicode glyphs), that's a follow-up
+  — just ask and I'll swap in a custom SVG piece set. Thank you. Keep shinning coders.
